@@ -36,4 +36,16 @@ El siguiente comando se usa **sólo la primera vez**.
 :~/nombre_proyecto$ git push --set-upstream origin master
 ```
 
+Se puede dar el escenario en que sumaste algún archivo al repositorio, luego lo agregaste a .gitignore pero te sigue adicionandolo, para solucionar eso basta borrar el "cache" de git.
+
+```bash
+:~/nombre_proyecto$ git rm -r --cached .
+```
+
+Para corroborar que quedó Ok basta con que luego realices un chequeo de estatus.
+
+```bash
+:~/nombre_proyecto$ git status
+```
+
 Con eso estamos Ok en la inicialización de git.
